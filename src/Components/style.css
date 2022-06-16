@@ -1,15 +1,22 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .logo {
-  width: 70px;
+  max-width: 100px;
+  height: 70px;
+  padding-left: 25px;
 }
 
 .nav {
-  background-color: whitesmoke;
+  background: #FFFFFF;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 70px;
 }
 
 .group-img {
   padding: 20px;
-  width: 600px;
+  max-width: 500px;
   display: flex;
   margin: auto;
 }
@@ -26,8 +33,6 @@
 height: 40px;
 left: 36px;
 top: 360px;
-
-font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
@@ -40,15 +45,9 @@ color: #000000;
 }
 
 .experience > p {
+  margin-top: 0px;
  width: 320px;
-height: 56px;
-left: 36px;
-top: 416px;
-font-family: 'Poppins';
 font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
+font-size: 20px;
 color: #222222;
 }
