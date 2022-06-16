@@ -1,0 +1,54 @@
+.logo {
+  width: 70px;
+}
+
+.nav {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.group-img {
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  margin: auto;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience > h1 {
+  width: 347px;
+height: 40px;
+left: 36px;
+top: 360px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 110%;
+/* identical to box height, or 40px */
+
+
+color: #000000;
+
+}
+
+.experience > p {
+ width: 320px;
+height: 56px;
+left: 36px;
+top: 416px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 110%;
+/* or 18px */
+color: #222222;
+}
