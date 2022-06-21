@@ -11,6 +11,7 @@ const NavBar = () => {
       <nav className="nav">
       {/* <NavLink to="/" > </NavLink> */}
        <NavLink to="/"><img className="logo" src={logo} alt="airbnb-logo" /></NavLink>
+       {/* <NavLink to="/card">Products</NavLink> */}
       </nav>
       <Hero/>
     </div>
