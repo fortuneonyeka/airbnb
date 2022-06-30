@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -9,7 +14,7 @@ body {
 }
 
 .nav {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   height: 70px;
 }
@@ -19,7 +24,10 @@ body {
   max-width: 500px;
   display: flex;
   margin: auto;
+  
 }
+
+
 
 .experience {
   display: flex;
@@ -30,46 +38,36 @@ body {
 
 .experience > h1 {
   width: 347px;
-height: 40px;
-left: 36px;
-top: 360px;
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 110%;
-/* identical to box height, or 40px */
-
-
-color: #000000;
-
+  height: 40px;
+  left: 36px;
+  top: 360px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: #000000;
 }
 
 .experience > p {
   margin-top: 0px;
- width: 320px;
-font-style: normal;
-font-size: 20px;
-color: #222222;
+  width: 320px;
+  font-style: normal;
+  font-size: 20px;
+  color: #222222;
 }
 
 .gray {
-  color: #918E9B;
+  color: #918e9b;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .content {
   display: flex;
   flex-direction: column;
-padding-left: 10px;
-font-size: 12px;
-justify-content: center;
+  padding-left: 10px;
+  font-size: 12px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -78,9 +76,11 @@ justify-content: center;
 }
 
 .imgs {
-  height: 5%;
-  width: 10%;
-  /* padding: 10px; */
+  width: 150px;
+  height: 100px;
+  border-radius: 9px;
+  margin-bottom: 9px;
+  display: flex;
 }
 
 .star {
@@ -92,14 +92,53 @@ justify-content: center;
 .card-stats {
   display: flex;
   gap: 3px;
-  width: 15%;
+  width:17%;
   font-size: 15px;
 }
 
+
+
 .price {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .description {
   width: 17%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: -200px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  color: red;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
