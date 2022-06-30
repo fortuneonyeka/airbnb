@@ -1,28 +1,36 @@
 import React from "react";
-
+import Star from "../assets/images/Star 1.png"
 import "./style.css";
 
-const Card = ({price,location, openSpot, rating, currency,reviewCount,title, img, description}) => {
+const Card = (props) => {
+  let badgeText;
+  if (props.openSpot === 0) {
+    badgeText = "SOLD OUT"
+  }else if (props.location === "Online"){
+    badgeText = "Oline"
+  }else {
+    badgeText = ""
+  }
   return (
 
-      <div className="container">
+      
         <div className="card">
-          <img className="imgs" src={img} alt="" />
+          {badgeText && <div className="card-badge">{badgeText}</div>}
+          <img className="imgs" src={props.coverImg} alt="" />
           <div className="card-stats">
-            {/* <img className="star" src={Star} /> */}
-            <span>Open Spots{openSpot}</span>
-            <span>Ratings:{rating}</span>
-            <span className="gray">Reviews:({reviewCount})</span>
-            <span className="gray">Location:{location}</span>
+            <span>Open Spots{props.openSpot}</span>
+            <span>Ratings:{props.stats.rating}</span>
+            <img className="star" src={Star} />
+            <span className="gray">Reviews:({props.stats.reviewCount})</span>
+             <span className="gray">Location:{props.location}</span>
           </div>
           <div className="content">
-            <span>{title}</span>
-            <span className="description">{description}</span>
-            <h4 className="price">From {currency}{price} / <span className="gray">person</span></h4>
+            {/* <span>{title}</span> */}
+            <span className="description">{props.description}</span>
+            <h4 className="price">From {props.currency}{props.price} / <span className="gray">person</span></h4>
           </div>
         </div>
        
-    </div>
   );
 };
 
